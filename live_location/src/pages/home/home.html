@@ -1,11 +1,12 @@
 <ion-header>
-<ion-title>
-  <h1>Find Live Location.</h1>
-</ion-title>
+  <ion-title>
+    <h1>Find Live Location.</h1>
+  </ion-title>
 </ion-header>
 
 <ion-content padding>
-  <button ion-button color="light" (click) = "getLocation()"> Get Live Location </button>
+  <button ion-button color="dark" (click)="gotoMap()">Show Google Map</button>
+  <button ion-button color="light" (click)="getLocation()"> Get Live Location </button>
   <p></p>
   <form>
     <td>
@@ -15,7 +16,7 @@
     <td>
       <tr>{{latitude}}</tr>
       <tr>{{longitude}}</tr>
-      </td>
+    </td>
   </form>
 
 
